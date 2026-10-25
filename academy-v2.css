@@ -47,3 +47,13 @@
 .plda-moves{display:flex!important;flex-direction:column!important;gap:8px!important}
 .plda-move{display:block;width:100%;box-sizing:border-box;border:1px solid #654b80;border-radius:11px;background:#30233e;color:#f2e6ff;padding:13px 16px;line-height:1.45}
 @media(max-width:480px){#academy-categories.plda-seven-grid{gap:9px!important}.plda-group{padding:15px}}
+
+/* PLDA: zwei bis drei Unterthemen nebeneinander, Figuren als echte Buttons */
+#academy-figure-list.plda-group-stack{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important;max-width:1250px;margin:22px auto}
+.plda-group{min-width:0;display:flex;flex-direction:column}
+.plda-moves{display:flex!important;flex-direction:column!important;gap:9px!important}
+button.plda-move{display:block;width:100%;text-align:left;font:inherit;cursor:pointer;transition:border-color .15s,background .15s,transform .15s}
+button.plda-move:hover,button.plda-move:focus-visible{background:#49305e;border-color:#e1b4ff;outline:2px solid transparent;transform:translateY(-1px)}
+button.plda-move.selected{background:#57346d;border-color:#d8b4fe;box-shadow:0 0 0 1px #d8b4fe}
+@media(max-width:950px){#academy-figure-list.plda-group-stack{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:560px){#academy-figure-list.plda-group-stack{grid-template-columns:1fr!important}}
