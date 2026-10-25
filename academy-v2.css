@@ -57,3 +57,12 @@ button.plda-move:hover,button.plda-move:focus-visible{background:#49305e;border-
 button.plda-move.selected{background:#57346d;border-color:#d8b4fe;box-shadow:0 0 0 1px #d8b4fe}
 @media(max-width:950px){#academy-figure-list.plda-group-stack{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:560px){#academy-figure-list.plda-group-stack{grid-template-columns:1fr!important}}
+
+/* Detailansicht der einzelnen Figuren */
+#academy-detail[hidden],#academy-figures[hidden],#academy-overview[hidden]{display:none!important}
+#academy-detail .academy-heading{margin:20px 0}
+#academy-detail .academy-layout{max-width:1000px;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+#academy-detail .academy-controls,.plda-figure-visual{background:linear-gradient(145deg,#2b1e39,#191421);border:1px solid #69477e;border-radius:18px;padding:25px;min-height:220px}
+.plda-figure-visual h3{margin-top:0;color:#f2d9ff}
+#academy-crumb{display:flex;flex-wrap:wrap;gap:12px}
+@media(max-width:700px){#academy-detail .academy-layout{grid-template-columns:1fr}}
