@@ -1,11 +1,12 @@
-PLATINO LADIES – Countdown auf der Warteliste
+PLATINO LADIES – PLDA UPDATE
 
-1. ZIP herunterladen und entpacken.
-2. GitHub-Repository platinoladies/platinoladies.github.io öffnen.
-3. Bestehende warteliste.html öffnen und über das Stift-Symbol bearbeiten.
-4. Den gesamten bisherigen HTML-Inhalt durch den Inhalt der beigefügten warteliste.html ersetzen.
-   Alternativ die bestehende Datei im Repository löschen und die neue warteliste.html hochladen.
-5. Commit changes klicken.
-6. Nach der GitHub-Pages-Veröffentlichung https://platinoladies.github.io/warteliste.html mit Strg+F5 aktualisieren.
+1. ZIP entpacken.
+2. PLDA-Verschluesseln.html in Chrome oder Edge doppelklicken.
+3. Bisheriges Clubpasswort eingeben und „Neue PLDA verschlüsseln“ anklicken.
+4. Beide erzeugten .encrypted.json-Dateien herunterladen.
+5. In GitHub im Stammverzeichnis die gleichnamigen zwei .encrypted.json-Dateien ersetzen.
+6. academy-v2.css, regelwerk.css und arena-letters.svg ebenfalls in das Stammverzeichnis hochladen.
+7. Die vorhandenen dressage-academy.html, regelwerk.html, secure-loader.js und secure-config.json NICHT ersetzen.
+8. Website öffnen, anmelden und PLDA und Regelwerk testen.
 
-Die Seite enthält den Countdown über den Bewerbungsspalten, jeweils bis zum ersten bzw. dritten Dienstag des Monats um 20:00 Uhr (Europe/Berlin). Die bisherigen Verweise auf script.js und warteliste.js bleiben bestehen.
+WICHTIG: Der Passwortschutz funktioniert nur, wenn secure-config.json und Clubpasswort unverändert bleiben. Das Passwort wird ausschließlich lokal verarbeitet.

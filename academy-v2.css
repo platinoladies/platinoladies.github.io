@@ -30,10 +30,9 @@
 .academy-controls{padding:26px;line-height:1.8}
 .academy-controls #academy-description{white-space:pre-line;font-size:1.05rem}
 
-/* Oberthemen nebeneinander; Figuren jeweils direkt unter ihrem Oberthema */
-.academy-figure-list.academy-group-columns{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));align-items:start;gap:24px;margin-top:28px;max-width:none}
-.academy-group-column{display:flex;flex-direction:column;min-width:0;gap:14px}
-.academy-group-title{font-size:1.14rem;line-height:1.4;color:#e9d1f8;margin:0;min-height:2.8em;display:flex;align-items:center;overflow-wrap:anywhere}
-.academy-group-moves{display:flex;flex-direction:column;gap:12px}
-.academy-group-moves .academy-figure{width:100%;min-height:66px}
-@media(max-width:600px){.academy-figure-list.academy-group-columns{grid-template-columns:1fr;gap:28px}.academy-group-title{min-height:0}}
+/* PLDA: book full-width, three rows of two topics */
+.academy-categories.plda-seven-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.academy-categories.plda-seven-grid .academy-rulebook-topic{grid-column:1/-1}
+@media(max-width:420px){.academy-categories.plda-seven-grid{gap:9px}.academy-categories.plda-seven-grid .academy-topic{padding:15px 8px}}
+
+.academy-figure.selected{border-color:#d8b4fe;background:#49305e}.academy-subtopic small{display:block}.academy-categories.plda-seven-grid .academy-topic{min-height:110px}
