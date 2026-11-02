@@ -3,6 +3,7 @@ const API='https://lqmwirnifapxctzmkmll.supabase.co/functions/v1/gaestebuch-admi
 const token=sessionStorage.getItem('pl_leitung_session');
 const list=document.getElementById('gb-list'),status=document.getElementById('gb-status'),tabs=document.getElementById('gb-tabs');
 let entries=[],filter='pending';
+if(!list||!status||!tabs){console.error('Gästebuch: Benötigte Seitenelemente fehlen.');return;}
 if(!token){status.textContent='Bitte zuerst in der Leitungszentrale anmelden.';return;}
 function el(tag,text){const e=document.createElement(tag);e.textContent=text;return e;}
 async function call(action,extra={}){const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,token,...extra})});const d=await r.json();if(!r.ok)throw Error(d.error||'Fehler');return d;}
